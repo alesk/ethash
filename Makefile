@@ -1,4 +1,9 @@
 .PHONY: clean test
+
+build:
+	go test ./...
+	go build ./...
+
 test:
 	./test/test.sh
 
